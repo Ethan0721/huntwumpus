@@ -27,11 +27,17 @@ import model.MapModel;
 
 public class GameRunner extends JFrame {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public static void main(String[] args) {
 		new GameRunner().setVisible(true);
 	}
 	
 	private JTabbedPane severalPanels;
+	private int ll;
     private JPanel view1; 	
 	private JPanel view2;  
 	private JButton ButtonNorth;
@@ -137,7 +143,7 @@ public class GameRunner extends JFrame {
 		map.addObserver((Observer) view2);
 	}
 	
-	// Button Listenners 
+	// Button Listeners 
 	  public void registerListener() {
 		  ButtonNorth.addActionListener(new ButtonNorthListener());
 		  ButtonSouth.addActionListener(new ButtonSouthListener());
