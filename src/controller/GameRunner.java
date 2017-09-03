@@ -37,7 +37,6 @@ public class GameRunner extends JFrame {
 	}
 	
 	private JTabbedPane severalPanels;
-	private int ll;
     private JPanel view1; 	
 	private JPanel view2;  
 	private JButton ButtonNorth;
